@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, width=device-width">
+	<!-- 要将打包的css文件，渲染在这里 -->
+	<link rel="stylesheet" type="text/css" href="js/bootstrap.css">
+	<title>团购网</title>
+</head>
+<body>
+<!-- 定义容器元素 -->
+<div id="app">
+	<header style="display: none;" v-show="isLoad" class="header">
+		<div class="title">
+			<div class="go-back" v-on:click="goBack"><span class="arrow"><span class="arrow green"></span></span></div>
+			<div class="login">登录</div>
+			<h1>团购网</h1>
+		</div>
+		<div class="search" v-show="showSearch">
+			<input type="text" placeholder="请输入搜索关键字" v-on:keyup.enter="gotoSearch">
+		</div>
+	</header>
+	<!-- 定义组件容器元素 -->
+	<!-- 同时只能渲染一个组件 -->
+	<component v-bind:hashquery="query" v-bind:searchquery="search" v-bind:is="view"></component>
+</div>
+<!-- 引入脚本文件 -->
+<script type="text/javascript" src="lib/mod.js"></script>
+<!-- 将模块打包的文件。引入这里 -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript">
+	require('js/bootstrap')
+
+</script>
+</body>
+</html>

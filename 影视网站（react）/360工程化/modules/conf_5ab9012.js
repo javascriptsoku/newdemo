@@ -1,0 +1,1 @@
+define("modules/conf.jsx",function(e,t,o){"use strict";o.exports={Router:ReactRouter.Router,Route:ReactRouter.Route,IndexRoute:ReactRouter.IndexRoute,DATABASE:[]}});

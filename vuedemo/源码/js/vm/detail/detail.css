@@ -1,0 +1,83 @@
+/*详情页*/
+.product .image-part {
+	position: relative;
+} 
+.product .image-part h1,
+.product .image-part p {
+	position: absolute;
+	bottom: 35px;
+	left: 20px;
+	font-size: 26px;
+	color: #fff;
+}
+.product .image-part p {
+	bottom: 15px;
+	font-size: 16px;
+}
+.product .price-part {
+	background: #fff;
+	height: 60px;
+	line-height: 60px;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+	padding: 0 10px;
+}
+.product .price-part .price {
+	font-size: 40px;
+	color: #06c1ae;
+}
+.product .price-part .sign {
+	color: #06c1ae;
+}
+.product .price-part .buy {
+	background: orange;
+	color: #fff;
+	padding: 8px 15px;
+	line-height: 14px;
+	float: right;
+	margin-top: 14px;
+}
+.product .sale-part {
+	background: #fff;
+	padding: 10px 0 10px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.product .sale-part li {
+	width: 50%;
+	float: left;
+	line-height: 30px;
+	font-size: 14px;
+	color: yellowgreen;
+	text-indent: 10px;
+}
+.product .sale-part li:last-child {
+	color: #333;
+} 
+.product .part {
+	background: #fff;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.product .part .header {
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
+	border-bottom: 1px solid #ccc;
+}
+.product .part .body {
+	padding: 10px 0;
+	font-size: 14px;
+}
+.product .part .body p {
+	line-height: 26px;
+}
+.product .part .footer {
+	line-height: 40px;
+	color: skyblue;
+	border-top: 1px solid #ccc;
+}
+.product .part .body h3 {
+	margin: 10px 0;
+	color: #f90;
+}

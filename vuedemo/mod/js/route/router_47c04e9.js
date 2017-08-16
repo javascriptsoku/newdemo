@@ -1,0 +1,1 @@
+define("js/route/router",function(e,a,i){function t(){var e=location.hash;e=e.replace(/^#\/?/,""),e=e.split("/");var a={home:!0,list:!0,detail:!0};n.view=a[e[0]]?e[0]:"home",n.query=e.slice(1)}var n=e("js/vm/app");window.addEventListener("hashchange",t),i.exports=t});

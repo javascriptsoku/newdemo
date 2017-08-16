@@ -1,0 +1,1 @@
+define("js/vm/app",function(e,a,o){var t=(e("js/vm/home/home"),e("js/vm/list/list"),e("js/vm/detail/detail"),new Vue({el:"#app",data:{view:"home",query:[],search:"",showSearch:!0,isLoad:!0},methods:{gotoSearch:function(e){this.search=e.target.value},goBack:function(){history.go(-1)}}}));o.exports=t});
